@@ -36,12 +36,12 @@ body {
 }
 
 .dark {
-  --clr-bg: #000000;       /* Background color - black */
-  --clr-bg-alt: #333333;   /* Alternate background color - dark grey */
-  --clr-fg: #999999;       /* Foreground color - medium grey */
-  --clr-fg-alt: #CCCCCC;   /* Alternate foreground color - light grey */
-  --clr-primary: #FFFFFF;  /* Primary color - white */
-  --shadow: rgba(0, 0, 0, 0.3) 0px 10px 36px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 1px; /* Shadow with adjusted opacity */
+  --clr-bg: #000000;      
+  --clr-bg-alt: #333333;   
+  --clr-fg: #999999;       
+  --clr-fg-alt: #CCCCCC;   
+  --clr-primary: #FFFFFF;  
+  --shadow: rgba(0, 0, 0, 0.3) 0px 10px 36px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 1px; 
 }
 
 ::-moz-selection {
