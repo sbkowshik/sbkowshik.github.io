@@ -1,293 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>Kowshik S B</title>
-  </head>
-  <body class="dark" id="top">
-    <header class="header center">
-      <h3>
-        <a
-          >Portfolio</a
-        >
-      </h3>
-
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kowshik's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">notebook</div>
+            <div class="nav-links">
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="https://github.com/sbkowshik" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/kowshiksb" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+            </div>
+        </nav>
     </header>
 
     <main>
-      <!-- About -->
-      <div class="about center">
-        <h1>Hi, I am <span class="about__name">Kowshik S B.</span></h1>
-        <h2 class="about__role">A Data Science Enthusiast.</h2>
-        <p class="about__desc">
-          Being a data science enthusiast right from my first year, I am drawn to the cutting-edge fields of Machine learning, Artificial Intelligence, Generative AI and Data Analytics. My passion has led me to explore many online courses and projects that have given me learning and confidence while stroking my interest further.
-        </p>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm Kowshik <span class="wave">👋</span></h1>
+                <p>A passionate software engineer specializing in Machine Learning and AI. Currently working on building innovative AI solutions and exploring the intersection of technology and problem-solving.</p>
+                <p>I'm currently focused on developing AI applications and working with Large Language Models. My recent work includes projects in stock analysis, document processing, and generative AI applications.</p>
+            </div>
+        </section>
 
-        <div class="about__contact center">
-          <a href="https://drive.google.com/file/d/1DSAioimbKrgL5WjTjHZM2-O3tW5h7_pe/view?usp=sharing">
-            <span class="btn btn--outline">Resume</span>
-          </a>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-container">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>AI/ML Intern - Fold (2586Labs)</h3>
+                        <span class="duration">Aug 2024 - Present</span>
+                    </div>
+                    <div class="experience-content">
+                        <p>Implemented ML models for their F1 categorization engine; set up MLflow pipelines for better tracking of the implemented models.</p>
+                        <p>Implemented an API endpoint for normalizing merchant patterns from transaction narrations with embeddings using Qdrant for vector-based similarity search.</p>
+                        <p>Developed an advanced LangGraph-based agent with multi-tool integration, enabling precise financial data analysis and personalized insights through dynamic, context-aware query resolution.</p>
+                    </div>
+                </div>
 
-          <a
-            href="https://github.com/sbkowshik"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Data Analysis Intern - Enrich</h3>
+                        <span class="duration">Oct 2023 - Dec 2023</span>
+                    </div>
+                    <div class="experience-content">
+                        <p>Developed data models and utilized SQL on GCP (BigQuery). Conducted data visualization with LookerStudio, automating live data reports by integrating BigQuery with LookerStudio.</p>
+                    </div>
+                </div>
 
-          <a
-            href="https://www.linkedin.com/in/kowshiksb/"
-            aria-label="linkedin"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
-      <!--Experience-->
-      <section id="experience" class="section experience">
-        <h2 class="section__title">Experience</h2>
-        <div class="experience__grid">
-          <div class="experience">
-            <h3>Generative AI Intern - VectrFlow</h3>
-            <p class="experience__description">
-              Developed low-code platform for Generative AI apps, integrating
-Langchain and LlamaIndex frameworks. Specialized in fine-tuning
-LLMS forImage and Document Querying, as well as various
-generative AI models.
-            </p>
-          </div>
-          <br>
-          <div class="experience">
-            <h3>Data Science Intern - Enrich</h3>
-            <p class="experience__description">
-              Developed data models and utilized SQL on GCP (BigQuery).
-              Conducted data visualization with LookerStudio, automating live
-              data reports by integrating BigQuery with LookerStudio.
-            </p>
-          </div>
-        </div>
-      </div>
-      </section>
-      <!-- Projects -->
-      <section id="projects" class="section projects">
-        <h2 class="section__title">Projects</h2>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Generative AI Intern - VectrFlow</h3>
+                        <span class="duration">Aug 2023 - Sep 2023</span>
+                    </div>
+                    <div class="experience-content">
+                        <p>Developed low-code platform for Generative AI apps, integrating Langchain and LlamaIndex frameworks. Specialized in fine-tuning LLMs for Image and Document Querying, as well as various generative AI models.</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="projects__grid">
-          <div class="project">
-            <h3>Data driven approach for predicting power
-              consumption in residential buildings for improved
-              energy management</h3>
-            <p class="project__description">
-              Analyzed weather-energy correlation in
-residential buildings to enhance energy management. Utilized
-models such as LSTM and BiLSTM to predict power consumption,
-aiming for optimized energy usage.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
-            </ul>
+        </section>
 
-            <a
-              href="https://github.com/sbkowshik/EnergyForecast"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-          </div>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>StockAI - Stock Analysis AI Agent</h3>
+                    <p>Developed an AI Agent that analyses stock prices, calculates probability using trading theories and provides latest finance news based on user input.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">AI</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">LangChain</span>
+                        <span class="project-tag">Finance</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Advanced RAG AI Assistant</h3>
+                    <p>Developed an advanced RAG assistant using langchain and Streamlit, which ingests documents, stores them in Qdrant vector storage, indexes them, and performs user queries for precise, context, chat history-aware answers.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">RAG</span>
+                        <span class="project-tag">LangChain</span>
+                        <span class="project-tag">Streamlit</span>
+                        <span class="project-tag">Qdrant</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Data-Driven Energy Management</h3>
+                    <p>Analyzed weather-energy correlation in residential buildings to enhance energy management. Utilized models such as LSTM and BiLSTM to predict power consumption.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">LSTM</span>
+                        <span class="project-tag">BiLSTM</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Data Analysis</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Real-Time Chat Application</h3>
+                    <p>Implemented Real-Time Chat application in Python using Socket programming, enabling File transfer, multiple client support, and end-to-end data encryption.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Socket Programming</span>
+                        <span class="project-tag">Encryption</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-          <div class="project">
-            <h3>StockAI - Stock Analysis AI Agent</h3>
-            <p class="project__description">
-              Developed an AI agent that analyses stock prices, calculates probability using trading theories and fetches latest finance news based on user input.(VITC CodeChef Hackathon'24 Winners)
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
-            </ul>
 
-            <a
-              href="https://github.com/sbkowshik/StockAI"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://stockai.streamlit.app/"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-          <div class="project">
-            <h3>Advanced RAG AI Assistant</h3>
-            <p class="project__description">
-              Developed an advanced RAG assistant using langchain and Streamlit, which ingests documents, stores them in Qdrant vector storage, indexes them, and performs user queries for precise, context, chat history-aware answers from the docs.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
-            </ul>
-            <a
-              href="https://github.com/sbkowshik/ragHUG"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://raghug.streamlit.app/"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-          <div class="project">
-            <h3>Sign Language Detection Using ISL for Regional
-              Languages</h3>
-            <p class="project__description">
-              Utilized TensorFlow for Deep Learning model to
-detectregional sign languages, aiding communication forthe deaf
-and mute. Employed OpenCV forimage processing.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
-            </ul>
-
-            <a
-              href="https://github.com/sbkowshik/islSIGNLANG"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-          </div>
-          <div class="project">
-            <h3>Real time Chat Application using Socket programming</h3>
-            <p class="project__description">
-              Implemented Real-Time Chat application in Python using Socket
-  programming, enabling File transfer, multiple client support, and
-  end-to-end data encryption.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
-            </ul>
-  
-            <a
-              href="https://github.com/sbkowshik/realtimechatapp"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-          </div>
-          <div class="project">
-            <h3>Design and Development of 4-Bit Adder Programmable
-              QCA Design using ALU Technique</h3>
-            <p class="project__description">
-              Utilized Quantum-dot
-Cellular Automata (QCA) for high-speed, low-power digital
-computation, showcasing its potential in complex arithmetic
-operations. Demonstrated promising advancements forfuture
-digital design and computation.
-            </p>
-            <br>
-            <a
-              href="https://github.com/sbkowshik/qca"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-          </div>
-        </div>
-        
-      </div>
-      </section>
-
-      <!-- Skills -->
-      <section class="section skills" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">Python</li>
-          <li class="skills__list-item btn btn--plain">Java</li>
-          <li class="skills__list-item btn btn--plain">C</li>
-          <li class="skills__list-item btn btn--plain">C++</li>
-          <li class="skills__list-item btn btn--plain">JavaScript</li>
-          <li class="skills__list-item btn btn--plain">TypeScript</li>
-          <li class="skills__list-item btn btn--plain">Matlab</li>
-          <li class="skills__list-item btn btn--plain">CSS</li>
-          <li class="skills__list-item btn btn--plain">SQL</li>
-          <li class="skills__list-item btn btn--plain">R Studio</li>
-          <li class="skills__list-item btn btn--plain">Langchain</li>
-          <li class="skills__list-item btn btn--plain">LlamaIndex</li>
-          <li class="skills__list-item btn btn--plain">AWS</li>
-          <li class="skills__list-item btn btn--plain">GCP</li>
-          <li class="skills__list-item btn btn--plain">Azure</li>
-        </ul>
-      </section>
-
-      <!-- Contact -->
-      <section class="section contact center" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <a>
-          <span class="btn--icon">sbkowshikk@gmail.com</span>
-        </a>
-      </section>
     </main>
 
-    <footer class="footer">
-      <a
-      >
-        
-      </a>
-    </footer>
-
-    <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
-    </div>
-    </div>
-
-    <script src="./script.js"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
